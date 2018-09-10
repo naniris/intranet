@@ -1,12 +1,11 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-danger">
 
 	
-	<a class="navbar-brand" href="#"> 
+	<a class="navbar-brand" href=""> 
 		<!-- <img src="../img/tropaicon.png" width="100px" alt="">  -->
 		<?php echo $this->Html->image('tropaicon.png', array('width'=>'100px', 'heith'=>'100px;')); ?>
 	</a>
-	  <a class="navbar-brand">Administrador</a>
-
+	
 	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 	    <ul class="navbar-nav mr-auto">
 	      <li class="nav-item dropdown">

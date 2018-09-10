@@ -16,7 +16,7 @@ pre{
 
 
 <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-  <a class="navbar-brand"> 
+  <a class="navbar-brand">
     <?php echo $this->Html->image('tropaicon.png', array('width'=>'100px', 'heith'=>'100px;')); ?>
    </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,12 +25,12 @@ pre{
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-<?php echo $this->Html->link(__('Notas'), array('action' => 'indexn'),array('class' => 'btn btn-dark my-2 my-sm-0 mx-3')); ?>
+
       <a href="calendario.html" class="btn btn-dark my-2 my-sm-0 mx-3">Calendario</a>
 
 
     </ul>
-
+   <?php echo $this->Html->link(__('Notas Personales'), array('action' => 'indexn'),array('class' => 'btn btn-outline-light my-2 my-sm-0 mx-3')); ?>
     <form class="form-inline my-2 my-lg-0">
 
       <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Cerrar Sesión</button>
@@ -41,7 +41,7 @@ pre{
 <section class="container">
   <h1 align="center" class="mt-4 text-dark">Registrar horas</h1>
 
-   
+
 <div class="row mt-5">
 <?php
 foreach ($tasks as $task):

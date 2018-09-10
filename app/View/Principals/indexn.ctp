@@ -36,7 +36,7 @@ pre{
       echo $this->Html->link("nueva nota",array("action"=>"addn"),array("class"=>"btn btn-outline-dark my-2 my-sm-0"));
 			?>
 
-    
+
     </div>
    </div>
 

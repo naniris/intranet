@@ -26,7 +26,7 @@
             		echo $this->Form->input('manager' , array('class'=>'form-control', 'label'=>'Gerente de producción'));
 					echo $this->Form->input('leader' , array('class'=>'form-control', 'label'=>'Lider de proyecto'));
 					echo $this->Form->input('responsible' , array('class'=>'form-control', 'label'=>'Diseñador responsable'));
-					echo $this->Form->input('hrs_attempt', array('class'=>'form-control', 'label'=>'Horas tentativas'));
+					echo $this->Form->input('hrs_attempt', array('class'=>'form-control', 'onkeypress'=>'noNegativos(this)','pattern'=>'^[0-9]+', 'min'=>'1', 'label'=>'Horas tentativas'));
             	?>
             	<label>Fecha de entrega</label>	
 				<?php	

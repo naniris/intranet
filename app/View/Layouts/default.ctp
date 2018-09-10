@@ -63,10 +63,13 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		echo $this->Html->script('popper.min.js');
 		echo $this->Html->script('bootstrap.min.js');
 		echo $this->Html->script('check.js');
+		echo $this->Html->script('noNegative.js');
+		echo $this->Html->script('fecha.js');
 	?>
 	<footer>
 		<?php echo $this->element('footer'); ?>	
 	</footer>
+
 	
 </body>
 </html>

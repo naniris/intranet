@@ -1,4 +1,9 @@
 
+<?php
+		
+	echo (date("d") . "/" . date("m") . "/" . date("Y"));
+?>
+
 <div class="card col-md-8 card-body shadow p-3 mb-5 bg-white rounded container proyects form">
         <div class="box-header with-border">
               <h3 class="box-title" style="margin-left:30%">Registrar Proyecto</h3>
@@ -9,7 +14,7 @@
         <div class="col">
             <div class="form-groug">
                <?php
-					echo $this->Form->input('title', array('class'=>'form-control', 'label'=>'Titulo'));
+					echo $this->Form->input('title', array('class'=>'form-control', 'label'=>'Proyecto'));
 					echo $this->Form->input('company' , array('class'=>'form-control', 'label'=>'Empresa'));
 					echo $this->Form->input('contact' , array('class'=>'form-control', 'label'=>'Persona contacto'));
 					echo $this->Form->input('phone' , array('class'=>'form-control', 'label'=>'Teléfono fijo'));
@@ -25,12 +30,12 @@
             		echo $this->Form->input('manager' , array('class'=>'form-control', 'label'=>'Gerente de producción'));
 					echo $this->Form->input('leader' , array('class'=>'form-control', 'label'=>'Lider de proyecto'));
 					echo $this->Form->input('responsible' , array('class'=>'form-control', 'label'=>'Diseñador responsable'));
-					echo $this->Form->input('hrs_attempt', array('class'=>'form-control', 'label'=>'Horas tentativas'));
+					echo $this->Form->input('hrs_attempt', array('class'=>'form-control', 'onkeypress'=>'noNegativos(this)','pattern'=>'^[0-9]+', 'min'=>'1', 'label'=>'Horas tentativas'));
 					
 				?>
 				<label>Fecha de entrega</label>	
 				<?php	
-					echo $this->Form->date('date_delivery', array('class'=>'form-control'));
+					echo $this->Form->date('date_delivery' ,array('class'=>'form-control', 'id'=>'fechaActual'));
 				?>	
             </div>
         </div>

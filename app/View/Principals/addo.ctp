@@ -124,8 +124,6 @@
 				<p><?php  echo $proyectinfoadd['Proyect']['responsible']; ?></p>
 				<strong><span>HORAS Tentativas</span></strong>
 				<p><?php  echo $proyectinfoadd['Proyect']['hrs_attempt']; ?></p>
-				<strong><span>HORAS reales</span></strong>
-				<p><?php  echo $proyectinfoadd['Proyect']['hrs_real']; ?></p>
 				</div>
 
 			</div>

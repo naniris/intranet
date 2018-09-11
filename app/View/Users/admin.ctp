@@ -28,9 +28,6 @@
 	  <td><?php echo h($user['User']['modified']); ?>&nbsp;</td>
 	  <td class="actions">
 		<a>
-			<?php echo $this->Html->link(__(''), array('action' => 'view', $user['User']['id']), array('class'=>'btn btn-primary far fa-eye')); ?>	
-		</a>	
-		<a>
 			<?php echo $this->Html->link(__(''), array('action' => 'edit', $user['User']['id']), array('class'=>'btn btn-info fas fa-user-edit')); ?>
 		</a>
 	    <a>

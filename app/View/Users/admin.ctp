@@ -1,4 +1,3 @@
-
 <h2>Lista de Usuarios</h2>
 <?php  echo $this->Html->link(__('Registrar'), array('controller'=>'users','action' => 'add'), array('class'=>'btn btn-primary')); 
 ?>
@@ -18,7 +17,7 @@
     </tr>
   </thead>
   <tbody>
-  	<?php foreach ($users as $user): ?>
+  	<?php foreach ($users1 as $user): ?>
     <tr>
 	  <td><?php echo h($user['User']['id']); ?>&nbsp;</td>
 	  <td><?php echo h($user['User']['name']); ?>&nbsp;</td>

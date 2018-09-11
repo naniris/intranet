@@ -21,8 +21,8 @@ class UsersController extends AppController {
  * @return void
  */
 	public function index() {
-		$this->User->recursive = 0;
-		$this->set('users', $this->Paginator->paginate());
+		$buscar = $this->User->find('all', array('conditions'=>array('Users.type'=> "Usuario")));
+		$this->set('users1', $buscar);
 	}
 
 /**
@@ -46,8 +46,8 @@ class UsersController extends AppController {
  * @return void
  */
 	public function admin(){
-		$this->User->recursive = 0;
-		$this->set('users', $this->Paginator->paginate());
+		$buscar = $this->User->find('all', array('conditions'=>array('User.type'=> "Usuario")));
+		$this->set('users1', $buscar);
 	}
 
 

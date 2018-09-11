@@ -26,7 +26,7 @@
 			<?php echo $this->Html->link(__(''), array('action' => 'edit', $status['Status']['id']), array('class'=>'btn btn-info fas fa-edit')); ?>
 		</a>
 	    <a>
-			<?php echo $this->Form->postLink(__(''), array('action' => 'delete', $status['Status']['id']), array('class'=>'btn btn-danger fas fa-trash' ,'confirm' => __('Esta seguro de eliminar el # %s?', $status['Status']['id']))); ?>
+			<?php echo $this->Form->postLink(__(''), array('action' => 'delete', $status['Status']['id']), array('class'=>'btn btn-danger fas fa-trash' ,'confirm' => __('Esta seguro de eliminar el estatus %s?', $status['Status']['name']))); ?>
 		</a>	
 
 	  </td>

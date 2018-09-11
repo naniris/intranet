@@ -34,7 +34,7 @@
 			<?php echo $this->Html->link(__(''), array('action' => 'edit', $user['User']['id']), array('class'=>'btn btn-info fas fa-user-edit')); ?>
 		</a>
 	    <a>
-			<?php echo $this->Form->postLink(__(''), array('action' => 'delete', $user['User']['id']), array('class'=>'btn btn-danger fas fa-user-times' ,'confirm' => __('Estas seguró de eliminar el # %s?', $user['User']['id']))); ?>
+			<?php echo $this->Form->postLink(__(''), array('action' => 'delete', $user['User']['id']), array('class'=>'btn btn-danger fas fa-user-times' ,'confirm' => __('Estas seguró de eliminar a %s?', $user['User']['name']))); ?>
 		</a>	
 	  </td>
     </tr>

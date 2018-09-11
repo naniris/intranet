@@ -27,7 +27,7 @@
 			<?php echo $this->Html->link(__(''), array('action' => 'edit', $proyect['Proyect']['id']), array('class'=>'btn btn-info fas fa-edit')); ?>
 		</a>
 	    <a>
-			<?php echo $this->Form->postLink(__(''), array('action' => 'delete', $proyect['Proyect']['id']), array('class'=>'btn btn-danger fas fa-trash' ,'confirm' => __('Estas seguro de eliminar el # %s?', $proyect['Proyect']['id']))); ?>
+			<?php echo $this->Form->postLink(__(''), array('action' => 'delete', $proyect['Proyect']['id']), array('class'=>'btn btn-danger fas fa-trash' ,'confirm' => __('Estas seguro de eliminar el proyecto %s?', $proyect['Proyect']['title']))); ?>
 		</a>	
 	  </td>
     </tr>
